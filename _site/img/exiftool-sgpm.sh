@@ -1,0 +1,1 @@
+exiftool -Filename -ImageDescription -CopyrightNotice -Keywords -progress -json . > sgpm-1.json
