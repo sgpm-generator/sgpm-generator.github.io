@@ -5,7 +5,7 @@ layout: default
 <div class="home">
 
   <h1>SGPM Basic Generator</h1>
-  {% for x in site.data.sgpm-1 %}
+  {% for x in site.data.sgpm %}
     <section style="margin-right:3px;display:inline-block;width:30%;">
     <img src="./img/{{ x.FileName }}" />
     <h3>Photo from: {{ x.CopyrightNotice }}</h3>
@@ -13,7 +13,7 @@ layout: default
     {{ x.ImageDescription }}
     </p>
     <ul style="list-style:none;margin-left:0;">
-    {% for y in site.data.sgpm-1[0].Keywords %}
+    {% for y in site.data.sgpm[0].Keywords %}
     <a href="/tags/{{y}}" style="padding:3px; display:inline-block; background:#eee; margin-bottom:2px;"><li> {{ y }} </li></a>
     {% endfor %}
     </ul>
